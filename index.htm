@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Work Time Calculator</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h1>Work Time Calculator</h1>
+
+  <label for="startTime">Arrival Time (HH:MM):</label>
+  <input type="time" id="startTime" required>
+
+  <label for="breakTime">Break Duration (minutes):</label>
+  <input type="number" id="breakTime" value="0" min="0">
+
+  <label for="workDuration">Required Work Time (hours):</label>
+  <input type="number" id="workDuration" value="8" step="0.25" min="0">
+
+  <button onclick="calculate()">Calculate Leave Time</button>
+
+  <h2 id="leaveTime"></h2>
+  <p id="timeWorkedNow"></p>
+  <p id="timeLeft"></p>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
